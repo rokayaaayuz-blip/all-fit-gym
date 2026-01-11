@@ -10,12 +10,12 @@ import reelYoga from "@/assets/reels/reel-yoga.mp4";
 import reelTransformation from "@/assets/reels/reel-transformation.mp4";
 import reelBuilt from "@/assets/reels/reel-built.mp4";
 
-import thumbAbhay from "@/assets/images/thumbnail-abhay.webp";
-import thumbBackDay from "@/assets/images/thumbnail-back-day.webp";
-import thumbDance from "@/assets/images/thumbnail-dance.webp";
-import thumbYoga from "@/assets/images/thumbnail-yoga.webp";
-import thumbTransformation from "@/assets/images/thumbnail-transformation.webp";
-import thumbBuilt from "@/assets/images/thumbnail-built.webp";
+import thumbAbhay from "@/assets/images/abhay-thumbnail.webp";
+import thumbBackDay from "@/assets/images/back-day-thumbnail.webp";
+import thumbDance from "@/assets/images/dance-thumbnail.webp";
+import thumbYoga from "@/assets/images/yoga-thumbnail.webp";
+import thumbTransformation from "@/assets/images/transformation-thumbnail.webp";
+import thumbBuilt from "@/assets/images/built-thumbnail.webp";
 
 interface Reel {
   id: number;
