@@ -10,9 +10,17 @@ import reelYoga from "@/assets/reels/reel-yoga.mp4";
 import reelTransformation from "@/assets/reels/reel-transformation.mp4";
 import reelBuilt from "@/assets/reels/reel-built.mp4";
 
+import thumbAbhay from "@/assets/images/thumbnail-abhay.webp";
+import thumbBackDay from "@/assets/images/thumbnail-back-day.webp";
+import thumbDance from "@/assets/images/thumbnail-dance.webp";
+import thumbYoga from "@/assets/images/thumbnail-yoga.webp";
+import thumbTransformation from "@/assets/images/thumbnail-transformation.webp";
+import thumbBuilt from "@/assets/images/thumbnail-built.webp";
+
 interface Reel {
   id: number;
   video: string;
+  thumbnail: string;
   title: string;
   instagramUrl: string;
 }
@@ -22,36 +30,42 @@ const reels: Reel[] = [
     id: 1,
     video: reelAbhay,
     title: "Abhay's Journey",
+    thumbnail: thumbAbhay,
     instagramUrl: "https://www.instagram.com/allfit_c_block/",
   },
   {
     id: 2,
     video: reelBackDay,
     title: "Back Day Workout",
+    thumbnail: thumbBackDay,
     instagramUrl: "https://www.instagram.com/allfit_c_block/",
   },
   {
     id: 3,
     video: reelDance,
     title: "Dance & Rhythm",
+    thumbnail: thumbDance,
     instagramUrl: "https://www.instagram.com/allfit_c_block/",
   },
   {
     id: 4,
     video: reelYoga,
     title: "Yoga Session",
+    thumbnail: thumbYoga,
     instagramUrl: "https://www.instagram.com/allfit_c_block/",
   },
   {
     id: 5,
     video: reelTransformation,
     title: "Transformation Sessions",
+    thumbnail: thumbTransformation,
     instagramUrl: "https://www.instagram.com/allfit_c_block/",
   },
   {
     id: 6,
     video: reelBuilt,
     title: "Built Brick by Brick",
+    thumbnail: thumbBuilt,
     instagramUrl: "https://www.instagram.com/allfit_c_block/",
   },
 ];
@@ -99,6 +113,7 @@ const InstagramReels = () => {
               {/* Video Thumbnail - first frame as poster */}
               <video
                 src={reel.video}
+                poster={reel.thumbnail}
                 className="w-full h-full object-cover"
                 muted
                 playsInline
